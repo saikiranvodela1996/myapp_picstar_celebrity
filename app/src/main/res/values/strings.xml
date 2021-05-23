@@ -1,0 +1,493 @@
+<resources>
+    <string name="app_name">PicStar Celebrity</string>
+    <string name="get_started">Get Started</string>
+    <string name="publiciity_made_easy">Publicity made easy</string>
+    <string name="welcome">Welcome</string>
+    <string name="back">Back</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+
+
+    <string name="com_auth0_client_id">K4aQGIftoSvf1OZVasx9emMjkFF5DCwa</string>
+    <string name="com_auth0_domain">dev-fwhugmus.us.auth0.com</string>
+    <string name="ok">OK</string>
+    <string name="hello_txt">Hello</string>
+
+    <string name="retake_txt">Retake</string>
+    <string name="continue_txt">Continue</string>
+
+
+    <string name="cancel_txt">Cancel</string>
+
+    <string name="spanish_txt">Spanish</string>
+
+
+    <string name="select_language_txt">Select a Language</string>
+
+
+    <string name="noInternet_txt">You are not connected to the Internet.</string>
+    <string name="personalise_feature_txt">Personalise your \n features</string>
+
+    <string name="liveselfie_txt">Live Selfie</string>
+    <string name="photoSelfie_txt">Photo Selfie</string>
+    <string name="videomsg_txt">Video Message</string>
+    <string name="live_video_txt">Live Video</string>
+
+    <string name="start_live_video_txt">Live video</string>
+
+    <string name="price_txt">Price: $ </string>
+
+    <string name="choosethis_feature_txt"> Choose this feature</string>
+    <string name="start_txt">  Start </string>
+    <string name="somethingwnt_wrong_txt">Something went wrong</string>
+
+    <string name="enter_servicecost_msg">Please enter service price</string>
+    <string name="profile_txt">Profile</string>
+
+    <string name="update_profile_txt">Update Profile</string>
+    <string name="create_event">Create Event</string>
+    <string name="forgotpwd_txt">Forgot password?</string>
+
+    <string name="enter_valid_price">Please enter valid price </string>
+
+    <string name="enteremail_pwd_msgalert">Please enter email address and password</string>
+
+
+    <string name="enter_email_txt">  Please enter email address </string>
+    <string name="privacypolicy_txt">Terms &amp; Privacy Policy </string>
+
+
+    <string name="privacy_policy">Privacy policy </string>
+
+    <string name="contactus_txt">Contact us</string>
+
+    <string name="block_txt">Block</string>
+
+    <string name="blocked_txt">Blocked</string>
+
+    <string name="block_thisuser_txt">Block this user</string>
+
+    <string name="comments_txt">Comments</string>
+
+    <string name="enter_urcomments_alertmsg">Please enter your comments on this user</string>
+
+
+    <string name="photos_nd_videos_txt">  Photos &amp; Videos</string>
+
+    <string name="photos_txt"> Photos</string>
+    <string name="videos_txt"> Videos</string>
+
+    <string name="enter_username_txt">Please enter your name</string>
+
+
+    <string name="select_gender_txt">Please select gender</string>
+
+    <string name="galleryandcamera_runtimepermission_alert_txt">Gallery,Camera and Record audio access is required to make full use of this app </string>
+    <string name="phone_call_permiision_alert">Phone call access is required to make full use of this app </string>
+    <string name="gallery_txt">Gallery</string>
+    <string name="camera_txt">Camera</string>
+    <string name="record_video_txt">Record video</string>
+
+
+    <string name="chooseoption_txt">Choose an option</string>
+    <string name="cam_Permision_deny_txt">Camera access is required to make full use of this app </string>
+
+    <string name="male_txt">  Male</string>
+
+    <string name="female_txt">Female</string>
+    <string name="other_txt">Other</string>
+
+    <string name="gender_txt">Gender</string>
+    <string name="planes_txt">PLANS</string>
+
+    <string name="update_yourprice_txt">UPDATE YOUR PRICE</string>
+
+    <string name="enter_email_alert">Please enter email address</string>
+
+    <string name="enter_validemail_msg">Please enter valid email address.</string>
+
+
+    <string name="email_address">Email Address</string>
+    <string name="submit">Submit</string>
+
+    <string name="dashboard_txt">Dashboard</string>
+
+    <string name="events_txt">Events</string>
+    <string name="save_settings_txt">Save Settings</string>
+    <string name="uploadvideo_txt">Upload video</string>
+    <string name="venue_txt">Venue</string>
+
+    <string name="date_txt">Date</string>
+
+    <string name="description_txt">Description</string>
+
+    <string name="event_name_txt">Event Name</string>
+    <string name="enter_eventname_txt">Please enter event name</string>
+    <string name="enter_venue">Please enter venue</string>
+    <string name="enter_eventdate_txt">Please enter event date</string>
+    <string name="enter_descritption">Please enter description</string>
+    <string name="enter_pwd_alert_txt">Please enter password</string>
+    <string name="select_atleast_oneservice">Please select atleast one service</string>
+
+    <string name="enter_photoselfie_price">Please enter price of Photo selfie</string>
+
+    <string name="enter_liveselfie_price">Please enter price of Live selfie</string>
+    <string name="enter_videomsg_price">Please enter price of Video message</string>
+
+    <string name="enter_livevideo_price">Please enter price of Live video</string>
+
+    <string name="price_should_be_greaterthan_zero">Price should be greater than zero</string>
+
+
+    <string name="stockimages_txt">Stock Images</string>
+
+    <string name="cant_upload_selectedVideo">Can"'"t able to upload.Selected video size is so large</string>
+
+
+    <string name="upcoming">Upcoming</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="album_txt">Album</string>
+    <string name="language_txt">Language</string>
+    <string name="stock_images">Stock Images</string>
+    <string name="history_txt">History</string>
+    <string name="settings_txt">Settings</string>
+
+
+    <string name="upload_stock_images">Upload Stock Images</string>
+    <string name="storage_permission_not_granted">Please give the storage permission.</string>
+    <string name="gallery_runtimepermission_alert_txt">Gallery access is required to make full use of this app </string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="front_camera">Front Camera</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="external_camera">External camera</string>
+    <string name="ultrawide">Ultra-wide</string>
+    <string name="no_burst">no burst</string>
+    <string name="preference_nr_mode_low_light_message">Low light mode: please hold the camera steady</string>
+    <string name="left_of_screen">at left of screen</string>
+    <string name="right_of_screen">at right of screen</string>
+    <string name="top_of_screen">at top of screen</string>
+    <string name="bottom_of_screen">at bottom of screen</string>
+    <string name="centre_of_screen">at centre</string>
+    <string name="repeats_to_go">repeats to go</string> <!--  intentionally starts lower case -->
+    <string name="face_detected">face</string>
+    <string name="faces_detected">faces</string>
+    <string name="focus_distance">Focus distance</string>
+    <string name="focus_bracketing_source_distance">Focus bracketing source distance</string>
+    <string name="focus_bracketing_target_distance">Focus bracketing target distance</string>
+    <string name="infinite">Infinite</string>
+    <string name="metres_abbreviation">m</string> <!-- symbol short for metres -->
+    <string name="white_balance">White balance</string>
+    <string name="cancelled_repeat_mode">Cancelled repeat mode</string>
+    <string name="cancelled_focus_bracketing">Cancelled focus bracketing</string>
+    <string name="error_features_4k">4K UHD</string>
+    <string name="error_features_bitrate">Bitrate</string>
+    <string name="error_features_frame_rate">Frame rate</string>
+    <string name="error_features_slow_motion">Slow motion</string>
+    <string name="exposure_compensation">Exposure compensation</string>
+    <string name="iso">ISO</string>
+    <string name="flash_off">Flash Off</string>
+    <string name="flash_auto">Flash Auto</string>
+    <string name="flash_on">Flash On</string>
+    <string name="flash_torch">Torch</string>
+    <string name="flash_red_eye">Red Eye</string>
+    <string name="flash_frontscreen_auto">Screen Flash Auto</string>
+    <string name="flash_frontscreen_on">Screen Flash On</string>
+    <string name="flash_frontscreen_torch">Screen Torch</string>
+    <string name="seconds_abbreviation">s</string> <!-- short for seconds -->
+    <string name="fps">FPS</string>
+    <string name="cancelled_timer">Cancelled timer</string>
+    <string name="location_not_available">GPS location not available</string>
+    <string name="video_pause">Video paused</string>
+    <string name="video_resume">Video resumed</string>
+    <string name="pause_video">Pause video recording</string>
+    <string name="resume_video">Resume video recording</string>
+    <string name="permission_record_audio_not_available">Microphone permission is not available</string>
+    <string name="video_no_free_space">Not enough free space to record video</string>
+    <string name="permission_location_not_available">Location permission is not available</string>
+    <string name="video_power_critical">Video stopped\nBattery level critically low</string>
+    <string name="permission_rationale_title">Permission required</string>
+    <string name="permission_rationale_camera">Camera permission is required to enable the camera</string>
+    <string name="permission_rationale_storage">Storage read/write permission is required to save resultant files such as photos or videos</string>
+    <string name="permission_rationale_record_audio">Microphone permission is required to record video with audio, as well as use the \"Audio control\" options</string>
+    <string name="permission_rationale_location">Location permission is required for geotagging (storing location data in
+        photos and videos). Location permission is also required for connecting to Bluetooth LE remote control devices.</string>
+    <string name="restore_settings_failed">Failed to restore settings</string>
+    <string name="saved_settings">Saved settings</string>
+    <string name="save_settings_failed">Failed to save settings</string>
+    <string name="photo_mode_panorama_full">Panorama</string>
+    <string name="photo_mode_hdr">HDR</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="hdr_info">HDR mode is useful for shots with a large variation in brightness. It works by taking multiple shots at different exposures, and combining them to create the final image.\n\nNote that HDR is not suitable for scenes with fast movement, and may result in less accurate color reproduction.\n\nTaking photos in HDR mode will be slower.</string>
+    <string name="panorama_info">To take a panorama image, hold your device in portrait orientation, and click to take a photo to start the panorama. Then rotate your device either left or right to move the centred white circle over the blue dot. After each new image is captured, keep rotating your device to cover each new blue dot that appears in turn.\n\nClick the tick icon to save the panorama, or the cross icon to cancel.\n\nNote that panorama photos can take time to process and save.</string>
+    <string name="photo_mode_noise_reduction_full">Noise Reduction</string>
+    <string name="photo_mode_dro">DRO</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_standard_full">Standard</string>
+    <string name="photo_mode_fast_burst_full">Fast Burst</string>
+    <string name="photo_mode_expo_bracketing_full">Exposure Bracketing</string>
+    <string name="photo_mode_focus_bracketing_full">Focus Bracketing</string>
+    <string name="flash_mode">Flash Mode</string>
+    <string name="preference_nr_mode">NR Mode</string>
+    <string name="preference_nr_mode_normal">Normal</string>
+    <string name="preference_fast_burst_n_images">Number of photos</string>
+    <string name="preference_fast_burst_n_images_entries_2">2</string>
+    <string name="preference_fast_burst_n_images_entries_3">3</string>
+    <string name="preference_fast_burst_n_images_entries_4">4</string>
+    <string name="preference_fast_burst_n_images_entries_5">5</string>
+    <string name="preference_fast_burst_n_images_entries_6">6</string>
+    <string name="preference_fast_burst_n_images_entries_8">8</string>
+    <string name="preference_fast_burst_n_images_entries_10">10</string>
+    <string name="preference_fast_burst_n_images_entries_12">12</string>
+    <string name="preference_fast_burst_n_images_entries_15">15</string>
+    <string name="preference_fast_burst_n_images_entries_20">20</string>
+    <string name="photo_mode_expo_bracketing">Expo {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_focus_bracketing">Focus {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="preference_timer">Timer</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="video_quality">Video resolution</string>
+    <string name="scene_mode">Scene mode</string>
+    <string name="photo_mode_standard">Std</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_noise_reduction">NR</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="preference_focus_bracketing_n_images_entries_2">2</string>
+    <string name="preference_focus_bracketing_n_images_entries_3">3</string>
+    <string name="preference_focus_bracketing_n_images_entries_4">4</string>
+    <string name="preference_focus_bracketing_n_images_entries_5">5</string>
+    <string name="preference_focus_bracketing_n_images_entries_6">6</string>
+    <string name="preference_focus_bracketing_n_images_entries_8">8</string>
+    <string name="preference_focus_bracketing_n_images_entries_10">10</string>
+    <string name="preference_focus_bracketing_n_images_entries_12">12</string>
+    <string name="preference_focus_bracketing_n_images_entries_15">15</string>
+    <string name="preference_focus_bracketing_n_images_entries_20">20</string>
+    <string name="preference_focus_bracketing_n_images_entries_25">25</string>
+    <string name="preference_focus_bracketing_n_images_entries_30">30</string>
+    <string name="preference_focus_bracketing_n_images_entries_40">40</string>
+    <string name="preference_focus_bracketing_n_images_entries_50">50</string>
+    <string name="preference_focus_bracketing_n_images_entries_100">100</string>
+    <string name="preference_focus_bracketing_n_images_entries_150">150</string>
+    <string name="preference_focus_bracketing_n_images_entries_200">200</string>
+    <string name="preference_nr_mode_low_light">Low light</string>
+    <string name="photo_mode_panorama">Pano</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_fast_burst" translatable="false">[]]]</string> <!-- keep short, as this shows in the popup menu; shouldn't be translated -->
+    <string name="grid">Grid</string>
+    <string name="aperture">Aperture</string>
+    <string name="preference_focus_bracketing_n_images">Number of photos</string> <!-- short form of Show a grid -->
+    <string name="preference_burst_mode_off">Off</string>
+    <string name="preference_burst_mode_2x">2x</string>
+    <string name="preference_burst_mode_3x">3x</string>
+    <string name="preference_burst_mode_4x">4x</string>
+    <string name="preference_burst_mode_5x">5x</string>
+    <string name="preference_burst_mode_10x">10x</string>
+    <string name="preference_burst_mode_20x">20x</string>
+    <string name="preference_burst_mode_30x">30x</string>
+    <string name="preference_burst_mode_40x">40x</string>
+    <string name="preference_burst_mode_50x">50x</string>
+    <string name="preference_burst_mode_100x">100x</string>
+    <string name="preference_burst_mode_200x">200x</string>
+    <string name="preference_burst_mode_500x">500x</string>
+    <string name="preference_burst_mode_unlimited">Unlimited</string>
+    <string name="preference_burst_mode">Repeat</string>
+    <string name="preference_auto_stabilise">Auto-level</string>
+    <string name="photo_mode">Photo Mode</string>
+    <string name="preference_resolution">Camera resolution</string>
+    <string name="feet_abbreviation">ft</string>
+    <string name="zoom">Zoom</string>
+    <string name="failed_to_process_hdr">HDR-Bild konnte nicht erzeugt werden</string>
+    <string name="failed_to_process_panorama">Panorama-Bild konnte nicht erstellt werden</string>
+    <string name="failed_to_auto_stabilise">Fehler bei der Bildlagekorrektur</string>
+    <string name="failed_to_stamp">Fehler beim Stempeln des Fotos</string>
+    <string name="failed_to_save_photo">Fehler beim Speichern des Fotos</string>
+    <string name="failed_to_save_photo_raw">Fehler beim Speichern des RAW-Fotos</string>
+    <string name="preference_video_capture_rate_normal">Normal</string>
+    <string name="preference_video_capture_rate">Geschwindigkeit</string>
+    <string name="color_effect">Farbeffekt</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="slow_motion_enabled">Slow motion enabled</string>
+    <string name="slow_motion_disabled">Slow motion disabled</string>
+    <string name="focus_bracketing_add_infinity">Add infinite distance</string>
+    <string name="failed_to_open_camera_1">FAILED TO OPEN CAMERA.</string>
+    <string name="failed_to_open_camera_2">CAMERA MAY BE IN USE</string>
+    <string name="failed_to_open_camera_3">BY ANOTHER APPLICATION?</string>
+    <string name="camera_id">ID</string>
+    <string name="no_permission">PERMISSIONS NOT AVAILABLE</string>
+    <string name="capturing">Capturing…</string>
+    <string name="processing">Processing…</string>
+    <string name="screen_lock_message_1">[LOCKED:</string>
+    <string name="screen_lock_message_2">Swipe to unlock]</string>
+    <string name="remaining">Remaining</string>
+    <string name="gb_abbreviation">GB</string>
+    <string name="angle">Angle</string>
+    <string name="direction">Direction</string>
+    <string name="panorama_cancelled">Panorama cancelled</string>
+    <string name="stop_video">Stop recording video</string>
+    <string name="start_video">Start recording video</string>
+    <string name="video_max_filesize">Video reached max file size</string>
+    <string name="failed_to_start_camera_preview">Failed to start camera preview</string>
+    <string name="camera_error">Serious camera error</string>
+    <string name="failed_to_take_picture">Failed to take picture</string>
+    <string name="video_may_be_corrupted">Error, video file may be corrupted</string>
+    <string name="not_supported">not supported on your device</string>
+    <string name="failed_to_reconnect_camera">Failed to reconnect to camera</string>
+    <string name="failed_to_save_video">Failed to save video file</string>
+    <string name="sorry">Sorry</string>
+    <string name="failed_to_record_video">Failed to record video</string>
+    <string name="video_error_unknown">Unknown error, video halted</string>
+    <string name="video_error_server_died">Server died, video halted</string>
+    <string name="photo_deleted">Photo deleted</string>
+    <string name="magnetic_accuracy_info">Your device\'s compass needs calibrating to improve its accuracy. This can be done by moving your device in a figure of 8 motion.\n\nCurrent accuracy:</string>
+    <string name="accuracy_unreliable">Unreliable</string>
+    <string name="accuracy_low">Low</string>
+    <string name="accuracy_medium">Medium</string>
+    <string name="accuracy_high">High</string>
+    <string name="accuracy_unknown">Unknown</string>
+    <string name="magnetic_accuracy_title">Compass direction</string>
+    <string name="speech_recognizer_started">Say \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+    <string name="speech_recognizer_extra_info" translatable="false">
+        (Your audio may be sent to remote\n
+        servers by Android to perform speech\n
+        recognition.)</string>
+    <string name="white_balance_auto">Auto</string>
+    <string name="white_balance_cloudy">Cloudy</string>
+    <string name="white_balance_daylight">Daylight</string>
+    <string name="white_balance_fluorescent">Fluorescent</string>
+    <string name="white_balance_incandescent">Incandescent</string>
+    <string name="white_balance_shade">Shade</string>
+    <string name="white_balance_twilight">Twilight</string>
+    <string name="white_balance_warm">Warm</string>
+    <string name="white_balance_manual">Manual</string>
+    <string name="scene_mode_action">Action</string>
+    <string name="scene_mode_barcode">Barcode</string>
+    <string name="scene_mode_beach">Beach</string>
+    <string name="scene_mode_candlelight">Candlelight</string>
+    <string name="scene_mode_auto">Auto</string>
+    <string name="scene_mode_fireworks">Fireworks</string>
+    <string name="scene_mode_landscape">Landscape</string>
+    <string name="scene_mode_night">Night</string>
+    <string name="scene_mode_night_portrait">Night portrait</string>
+    <string name="scene_mode_party">Party</string>
+    <string name="scene_mode_portrait">Portrait</string>
+    <string name="scene_mode_snow">Snow</string>
+    <string name="scene_mode_sports">Sports</string>
+    <string name="scene_mode_steady_photo">Steady photo</string>
+    <string name="scene_mode_sunset">Sunset</string>
+    <string name="scene_mode_theatre">Theatre</string>
+    <string name="color_effect_aqua">Aqua</string>
+    <string name="color_effect_blackboard">Blackboard</string>
+    <string name="color_effect_mono">Mono</string>
+    <string name="color_effect_negative">Negative</string>
+    <string name="color_effect_none">None</string>
+    <string name="color_effect_posterize">Posterize</string>
+    <string name="color_effect_sepia">Sepia</string>
+    <string name="color_effect_solarize">Solarize</string>
+    <string name="color_effect_whiteboard">Whiteboard</string>
+    <string name="anti_banding_auto">Auto</string>
+    <string name="anti_banding_50hz">50Hz</string>
+    <string name="anti_banding_60hz">60Hz</string>
+    <string name="anti_banding_off">Off</string>
+    <string name="noise_reduction_mode_default">Default</string>
+    <string name="noise_reduction_mode_off">Off</string>
+    <string name="noise_reduction_mode_minimal">Minimal</string>
+    <string name="noise_reduction_mode_fast">Fast</string>
+    <string name="noise_reduction_mode_high_quality">High Quality</string>
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="auto_stabilise_not_supported">Sorry, auto-level not supported\non this device</string>
+    <string name="switch_to_photo">Switch to photo mode</string>
+    <string name="finish_panorama">Finish panorama</string>
+    <string name="switch_to_video">Switch to video mode</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="switch_to_front_camera">Switch to front camera</string>
+    <string name="switch_to_back_camera">Switch to back camera</string>
+    <string name="switch_to_external_camera">Switch to external camera</string>
+    <string name="switch_to_unknown_camera">Switch camera</string>
+    <string name="on">On</string> <!-- whether a setting is turned on, e.g., "Auto-level: On" -->
+    <string name="off">Off</string> <!-- whether a setting is turned off, e.g., "Auto-level: Off" -->
+    <string name="intro_text">Touch to focus, and press the blue camera button to take photos.
+        \n\nTo disable maximum screen brightness, see Settings/On screen GUI/\"Force maximum brightness\".
+        To save to SD cards on Android 5+, see Settings/More camera controls/\"Use Storage Access Framework\".
+        For more help, click \"Online help\" from Settings.
+    </string>
+    <string name="preference_online_help">Online help</string>
+    <string name="whats_new">What\'s New:</string>
+    <string name="preference_location">Store location data (Geotagging)</string>
+    <string name="preference_textstamp">Custom text</string>
+    <string name="stamp_enabled">Photo stamp enabled</string>
+    <string name="stamp_disabled">Photo stamp disabled</string>
+    <string name="face_detection_enabled">Face detection enabled</string>
+    <string name="face_detection_disabled">Face detection disabled</string>
+    <string name="auto_stabilise_info">Auto-level will automatically rotate photos so that they appear level.\n\nNote that this means images will come out a slightly lower resolution (due to the rotation and cropping that\'s required).</string>
+    <string name="white_balance_locked">White balance locked</string>
+    <string name="white_balance_unlocked">White balance unlocked</string>
+    <string name="exposure_locked">Exposure locked</string>
+    <string name="exposure_unlocked">Exposure unlocked</string>
+    <string name="screen_is_locked">Screen is locked\nswipe the screen to unlock</string>
+    <string name="open_files_saf_exception_generic">No file dialog found on this device, option is not supported</string>
+    <string name="changed_save_location">Changed save location to:</string>
+    <string name="saf_permission_failed">Unable to save to this folder</string>
+    <string name="no_gallery_app">No gallery app available</string>
+    <string name="open_files_saf_exception_ghost">No file dialog found on this device, ghost image option is not supported</string>
+    <string name="saf_permission_failed_open_image">Unable to open this image</string>
+    <string name="saf_cancelled">Storage Access Framework cancelled</string>
+    <string name="parent_folder">Parent Folder</string>
+    <string name="cant_write_folder">Can\'t write to this folder</string>
+    <string name="enter_new_folder">Enter new folder name</string>
+    <string name="folder_exists">Folder already exists</string>
+    <string name="failed_create_folder">Failed to create folder</string>
+    <string name="new_folder">New Folder</string>
+    <string name="photo">Photo</string>
+    <string name="preference_video_rec709">REC709</string>
+    <string name="preference_video_srgb">sRGB</string>
+    <string name="preference_video_gamma">Gamma</string>
+    <string name="preference_video_jtvideo" translatable="false">JTVideo</string>
+    <string name="preference_video_jtlog" translatable="false">JTLog</string>
+    <string name="preference_video_jtlog2" translatable="false">JTLog2</string>
+    <string name="video_log">Log profile</string>
+    <string name="max_duration">Max duration</string>
+    <string name="max_filesize">Max file size</string>
+    <string name="mb_abbreviation">MB</string> <!-- symbol short for megabytes -->
+    <string name="preference_video_flash">Flash while recording video</string>
+    <string name="video">Video</string>
+    <string name="preference_save_location">Save location</string>
+    <string name="audio_disabled">Audio disabled</string>
+    <string name="clear_folder_history">Clear folder history</string>
+    <string name="choose_another_folder">Choose another folder</string>
+    <string name="clear_folder_history_question">Clear folder history?</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="high_speed">High Speed</string>
+    <string name="preference_face_detection">Face detection</string>
+    <string name="audio_listener_started">Make a loud noise</string>
+    <string name="audio_listener_failed">Failed to initalise audio listening</string>
+    <string name="choose_save_location">Choose save location:</string>
+    <string name="duration_unlimited">Unlimited</string>
+    <string name="duration_3s">3 seconds</string>
+    <string name="duration_5s">5 seconds</string>
+    <string name="duration_10s">10 seconds</string>
+    <string name="duration_15s">15 seconds</string>
+    <string name="duration_30s">30 seconds</string>
+    <string name="duration_1m">1 minute</string>
+    <string name="duration_2m">2 minutes</string>
+    <string name="duration_3m">3 minutes</string>
+    <string name="duration_4m">4 minutes</string>
+    <string name="duration_5m">5 minutes</string>
+    <string name="duration_6m">6 minutes</string>
+    <string name="duration_7m">7 minutes</string>
+    <string name="duration_8m">8 minutes</string>
+    <string name="duration_9m">9 minutes</string>
+    <string name="duration_10m">10 minutes</string>
+    <string name="duration_11m">11 minutes</string>
+    <string name="duration_12m">12 minutes</string>
+    <string name="duration_15m">15 minutes</string>
+    <string name="duration_20m">20 minutes</string>
+    <string name="duration_25m">25 minutes</string>
+    <string name="duration_30m">30 minutes</string>
+    <string name="duration_45m">45 minutes</string>
+    <string name="duration_1h">1 hour</string>
+    <string name="room_status">status</string>
+    <string name="audio_device">Audio device</string>
+    <string name="settings">Settings</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+    <string name="room_screen_select_device">Select Device</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+
+</resources>

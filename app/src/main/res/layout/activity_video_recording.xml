@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_back" />
+
+    <LinearLayout
+        android:id="@+id/cameraLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/take_photo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@null"
+                android:onClick="clickedTakePhoto"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_capture" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/switch_camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:onClick="clickedSwitchCamera"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_flip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/pause_video"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@null"
+                android:onClick="clickedPauseVideo"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/switch_video"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/take_photo"
+                android:alpha="0.55"
+                android:background="@null"
+                android:onClick="clickedSwitchVideo"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

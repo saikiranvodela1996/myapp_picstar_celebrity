@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <!-- binding object of ViewModel to the XML layout -->
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.DashBoardViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_screen_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/slide_menu"
+                        style="@style/IconStyle"
+                        android:src="@drawable/ic_dashboard_menu" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        style="@style/IconStyle"
+                        android:onClick="@{()-> viewModel.onPhotoSelfieClicked()}"
+                        android:src="@drawable/ic_notification" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_pic_imgv"
+                        android:layout_width="@dimen/dashboard_logos_height"
+                        android:layout_height="@dimen/dashboard_logos_height"
+                        android:src="@drawable/ic_profilepholder" />
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/hello_txt" />
+
+                        <TextView
+                            android:id="@+id/userNameTv"
+                            style="@style/BiggestTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:text="@={viewModel.userName}" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/black_line_border"
+                            android:onClick="@{()-> viewModel.onCreateEventClicked()}"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="19dp"
+                            android:paddingBottom="7dp">
+
+                            <TextView
+                                style="@style/TextViewStyle"
+                                android:drawableLeft="@drawable/ic_calendar_black"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/create_event" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/no_events_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="@={viewModel.message}"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/layout_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/dashboard_live_selfie_bg"
+                        android:onClick="@{(view) -> viewModel.onLiveSelfieClicked(view)}"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/layout_one_imgv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dashboard_logos_height"
+                            android:src="@drawable/ic_liveselfies_logo" />
+
+                        <TextView
+                            android:id="@+id/layout_one_totalcount"
+                            style="@style/BiggestTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/layout_one_service_name"
+                            style="@style/BigTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/liveselfie_txt"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/dashboard_live_video_bg"
+                        android:onClick="@{(view) -> viewModel.onLiveSelfieClicked(view)}"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/layout_two_imgv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dashboard_logos_height"
+                            android:src="@drawable/ic_livevideo_logo" />
+
+                        <TextView
+                            android:id="@+id/layout_two_totalcount"
+                            style="@style/BiggestTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/layout_two_servicename"
+                            style="@style/BigTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/live_video_txt"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/layout_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/dashboard_video_msg_bg"
+                        android:onClick="@{(view) -> viewModel.onLiveSelfieClicked(view)}"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/layout_three_imgv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dashboard_logos_height"
+                            android:src="@drawable/ic_videomsg_logo" />
+
+                        <TextView
+                            android:id="@+id/layout_three_totalcount"
+                            style="@style/BiggestTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/layout_three_servicename"
+                            style="@style/BigTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/videomsg_txt"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_four"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/dashboard_photo_selfie_bg"
+                        android:onClick="@{(view) -> viewModel.onLiveSelfieClicked(view)}"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/layout_four_imgv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dashboard_logos_height"
+                            android:src="@drawable/ic_photoselfie_logo" />
+
+                        <TextView
+                            android:id="@+id/layout_four_totalcount"
+                            style="@style/BiggestTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/layout_four_servicename"
+                            style="@style/BigTextStyle"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/photoSelfie_txt"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

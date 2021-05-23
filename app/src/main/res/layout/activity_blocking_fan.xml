@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.BlockingFanViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_screen_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                style="@style/IconStyle"
+                android:layout_gravity="left"
+                android:layout_marginLeft="3dp"
+                android:onClick="@{()-> viewModel.onClickBack()}"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/BiggestTextStyle"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/block_thisuser_txt" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/comments_txt"
+            android:textSize="18sp" />
+
+        <com.devrabbit.picstarcelebrity.helpers.EditText_MultiLine_ActionDone
+            android:id="@+id/comments_et"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:background="@drawable/editext_bg"
+            android:gravity="start"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:text="@={viewModel.celebComments}"
+            android:textColorHint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/blockuser_btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/paynowbtn_bg"
+            android:fontFamily="@font/hind_medium"
+            android:onClick="@{()-> viewModel.onClickSubmitComments()}"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</layout>

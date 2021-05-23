@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_color">#226584</color>
+    <color name="toolBar_bgcolor"> #00364F</color>
+
+    <color name="text_event_createdat_color">#919191</color>
+    <color name="price_hint_colorcolor"> #8187AE</color>
+    <color name="button_color">#B7102E</color>
+    <color name="livevideo_txtcolor"> #252F6C</color>
+    <color name="videomsg_txtcolor">  #115343</color>
+    <color name="profile_line_color">#ABABAB</color>
+    <color name="line_color">#DFE2E7</color>
+    <color name="event_location_color">#4B4B4B</color>
+    <color name="white_transparent">  #4DFFFFFF </color>
+    <color name="ethint_color"> #3d3d3d</color>
+    <color name="live_selfie_color">#313D81</color>
+    <color name="live_video_color">#FA58BB</color>
+    <color name="video_message_color">#21CFA4</color>
+    <color name="photo_selfie_color">#573CFB</color>
+    <color name="statubar_color">#1BA885</color>
+    <color name="dashboard_text_color">#1D293F</color>
+    <color name="success_bg">#E5F7E8</color>
+    <color name="createevent_text_color">#9097A5</color>
+    <color name="grey_color">#919191</color>
+    <color name="lite_grey_color">#DFE2E7</color>
+    <color name="completed_txt_color_green">#43BC52</color>
+    <color name="fail_bg">#FBDACF</color>
+    <color name="fail_txt_color">#EA3019</color>
+    <color name="upload_images_btn_color">#B7102E</color>
+    <color name="gender_txt_color">#696969</color>
+    <color name="edit_line_bg">#F4F4F4 </color>
+    <color name="plans_text_color">#696969 </color>
+    <color name="switch_selected_color">  #48dc5c </color>
+
+</resources>

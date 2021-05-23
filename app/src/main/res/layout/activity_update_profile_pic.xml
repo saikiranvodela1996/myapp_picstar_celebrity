@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodell"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.UpdateProfilePicViewModel" />
+    </data>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_screen_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:onClick="@{()-> viewmodell.onBackClicked()}"
+                android:padding="5dp"
+                android:src="@drawable/ic_back">
+
+            </ImageView>
+
+            <TextView
+                style="@style/BigTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/profile_txt" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.devrabbit.picstarcelebrity.customui.MyImageView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                custom:cropMode="ratio_free" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/button_crop_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:background="@android:color/transparent"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_crop_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:background="@android:color/transparent"
+                    android:text="Done"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+           android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_profilepholder" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/camera_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|right"
+                    android:onClick="@{()-> viewmodell.onClickCameraIcon()}"
+                    android:src="@drawable/ic_camera_pp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/user_name_edit"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="#FFFFFF"
+                    android:text="@={viewmodell.username}">
+
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/line_color" />
+
+
+                <TextView
+                    android:id="@+id/male_textview"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/gender_txt">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gender_drawable"
+                        android:gravity="center"
+                        android:onClick="@{()-> viewmodell.onMaleClicked()}"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/male_text_view"
+                            style="@style/SmallTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_gender_uncheck"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="@string/male_txt"
+                            android:textColor="@color/gender_txt_color">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gender_drawable"
+                        android:gravity="center"
+                        android:onClick="@{()-> viewmodell.onFeMaleClicked()}"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/female_text_view"
+                            style="@style/SmallTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_gender_uncheck"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="@string/female_txt"
+                            android:textColor="@color/gender_txt_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gender_drawable"
+                        android:gravity="center"
+                        android:onClick="@{()-> viewmodell.onOtherClicked()}"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/other_male_text_view"
+                            style="@style/SmallTextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_gender_uncheck"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="@string/other_txt"
+                            android:textColor="@color/gender_txt_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/upload_button"
+                style="@style/BigTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/upload_images_btn_color"
+                android:gravity="center"
+                android:onClick="@{()-> viewmodell.onUpdateProfilePicClicked()}"
+                android:text="@string/update_profile_txt"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

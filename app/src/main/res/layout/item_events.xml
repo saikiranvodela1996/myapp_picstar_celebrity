@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/cardview_light_background"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_events_calender">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/event_name"
+                    style="@style/BigTextStyle"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="10"
+                    android:paddingRight="10dp"
+                    android:singleLine="false"
+                    android:text="HollyWood Studio"
+                    android:textColor="@color/toolBar_bgcolor" />
+
+                <TextView
+                    android:id="@+id/event_date"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_calendar_black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:textColor="@color/event_location_color" />
+
+                <TextView
+                    android:id="@+id/event_location"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_map_pinline"
+                    android:maxLines="10"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/event_location_color" />
+
+                <TextView
+                    android:id="@+id/event_description"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="10"
+                    android:paddingTop="5dp"
+                    android:singleLine="false"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shortdateLL"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/grey_line_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_date_formated"
+                    style="@style/BiggestTextStyle"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="10"
+                    android:textColor="@color/toolBar_bgcolor" />
+
+                <TextView
+                    android:id="@+id/event_month_formatted"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Apr"
+                    android:textColor="@color/toolBar_bgcolor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/event_created_at"
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/text_event_createdat_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

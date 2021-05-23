@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.Settings_View_Model" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:onClick="@{()-> viewModel.onBackClicked()}"
+                android:padding="5dp"
+                android:src="@drawable/ic_back" />
+
+
+            <TextView
+                style="@style/BiggestTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/settings_txt" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/planes_txt"
+            android:textColor="#696969" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/update_yourprice_txt"
+            android:textColor="#A3A3A3"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/photo_selfie"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/photoSelfie_txt"
+                    android:textColor="@color/toolBar_bgcolor">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_line_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_edit"
+                        android:gravity="center|left"
+                        android:text="$"
+                        android:textSize="17sp" />
+
+
+                    <EditText
+                        android:id="@+id/photoselfie_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left|center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:text="@={viewModel.photoSelfiePrice}"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/photoselfie_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:sb_show_indicator="false" />
+                <!--  <Switch
+                      android:id="@+id/photoselfie_switch"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:onClick="@{()-> viewModel.onClickPhotoSelfieSwitch()}"
+                      android:trackTint="@color/plans_text_color" />-->
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/live_selfie"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/liveselfie_txt"
+                    android:textColor="@color/toolBar_bgcolor">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_line_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_edit"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="$"
+                        android:textSize="17sp" />
+
+
+                    <EditText
+                        android:id="@+id/liveselfie_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left|center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:text="@={viewModel.liveSelfiePrice}"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/liveselfie_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:sb_show_indicator="false" />
+
+                <!-- <Switch
+                     android:id="@+id/liveselfie_switch"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:onClick="@{()-> viewModel.onClickLiveSelfieSwitch()}"
+                     android:thumbTint="@color/white"
+                     android:track="@drawable/switch_select"
+                     />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/video_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/videomsg_txt"
+                    android:textColor="@color/toolBar_bgcolor">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_line_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_edit"
+                        android:gravity="center|left"
+                        android:text="$"
+                        android:textSize="17sp" />
+
+
+                    <EditText
+                        android:id="@+id/videomsg_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left|center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:text="@={viewModel.videoMsgPrice}"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/videomsg_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:sb_show_indicator="false" />
+                <!--   <Switch
+                       android:id="@+id/videomsg_switch"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:onClick="@{()-> viewModel.onClickVideoMsgSwitch()}"
+                       android:trackTint="@color/plans_text_color" />-->
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:drawableLeft="@drawable/live_video"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/live_video_txt"
+                    android:textColor="@color/toolBar_bgcolor">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_line_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_edit"
+                        android:gravity="center|left"
+                        android:text="$"
+                        android:textSize="17sp" />
+
+
+                    <EditText
+                        android:id="@+id/livevideo_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="left|center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:text="@={viewModel.liveVideoPrice}"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/livevideo_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:sb_show_indicator="false" />
+                <!-- <Switch
+                     android:id="@+id/livevideo_switch"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:onClick="@{()-> viewModel.onClickLiveVideoSwitch()}"
+                     android:trackTint="@color/plans_text_color" />-->
+
+
+            </LinearLayout>
+
+            <!--  <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="24dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      style="@style/TextViewStyle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.9"
+                      android:drawableLeft="@drawable/live_video"
+                      android:drawablePadding="20dp"
+                      android:gravity="center_vertical"
+                      android:text="@string/live_video_txt">
+
+                  </TextView>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/edit_line_bg"
+                      android:orientation="horizontal"
+                      android:paddingLeft="7dp"
+                      android:paddingTop="5dp"
+                      android:paddingRight="7dp"
+                      android:paddingBottom="5dp">
+
+                      <TextView
+                          style="@style/TextViewStyle"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:drawableLeft="@drawable/ic_edit"
+                          android:gravity="center_vertical"
+                          android:text="$"
+                          android:textSize="17sp" />
+
+
+                      <EditText
+                          android:id="@+id/edit_2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/edit_line_bg"
+                          android:gravity="left|center"
+                          android:inputType="numberDecimal"
+                          android:text="2000000" />
+
+
+                  </LinearLayout>
+
+                  <Switch
+                      android:id="@+id/swith_video"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="end"
+                      android:layout_marginRight="10dp"
+                      android:gravity="end"
+                      android:trackTint="@color/plans_text_color" />
+
+
+              </LinearLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginLeft="70dp"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginRight="70dp"
+                  android:layout_marginBottom="15dp"
+                  android:background="@color/line_color" />
+
+              <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="24dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      style="@style/TextViewStyle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.9"
+                      android:drawableLeft="@drawable/photo_selfie"
+                      android:drawablePadding="20dp"
+                      android:gravity="center_vertical"
+                      android:text="@string/photoSelfie_txt">
+
+                  </TextView>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/edit_line_bg"
+                      android:orientation="horizontal"
+                      android:paddingLeft="7dp"
+                      android:paddingTop="5dp"
+                      android:paddingRight="7dp"
+                      android:paddingBottom="5dp">
+
+                      <TextView
+                          style="@style/TextViewStyle"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:drawableLeft="@drawable/ic_edit"
+                          android:gravity="center_vertical"
+                          android:text="$"
+                          android:textSize="17sp" />
+
+
+                      <EditText
+                          android:id="@+id/edit_3"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/edit_line_bg"
+                          android:gravity="left|center"
+                          android:inputType="numberDecimal"
+                          android:text="2000000" />
+
+
+                  </LinearLayout>
+
+                  <Switch
+                      android:id="@+id/swith_photo_selfie"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="10dp"
+                      android:trackTint="@color/plans_text_color" />
+
+
+              </LinearLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginLeft="70dp"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginRight="70dp"
+                  android:layout_marginBottom="15dp"
+                  android:background="@color/line_color" />
+
+              <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:layout_marginLeft="24dp"
+                  android:layout_marginBottom="25dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      style="@style/TextViewStyle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.7"
+                      android:drawableLeft="@drawable/video_icon"
+                      android:drawablePadding="20dp"
+                      android:gravity="center_vertical"
+                      android:text="@string/videomsg_txt">
+
+                  </TextView>
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/edit_line_bg"
+                      android:orientation="horizontal"
+                      android:paddingLeft="7dp"
+                      android:paddingTop="5dp"
+                      android:paddingRight="7dp"
+                      android:paddingBottom="5dp">
+
+                      <TextView
+                          style="@style/TextViewStyle"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:drawableLeft="@drawable/ic_edit"
+                          android:gravity="center_vertical"
+                          android:text="$"
+                          android:textSize="17sp" />
+
+
+                      <EditText
+                          android:id="@+id/edit_4"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/edit_line_bg"
+                          android:gravity="left|center"
+                          android:inputType="numberDecimal"
+                          android:text="2000000" />
+
+
+                  </LinearLayout>
+
+                  <Switch
+                      android:id="@+id/swith_video_message"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="end"
+                      android:layout_marginRight="10dp"
+                      android:gravity="end"
+                      android:trackTint="@color/plans_text_color" />
+
+
+              </LinearLayout>-->
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F4F4F6">
+
+        </View>
+
+        <Button
+            android:id="@+id/calender_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/update_button"
+            style="@style/BigTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/upload_images_btn_color"
+            android:gravity="center"
+            android:onClick="@{()-> viewModel.onClickSaveSettings()}"
+            android:text="@string/save_settings_txt"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</layout>

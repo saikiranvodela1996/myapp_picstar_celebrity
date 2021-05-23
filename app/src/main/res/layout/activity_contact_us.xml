@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_screen_bg"
+    android:orientation="vertical"
+    tools:context=".mvvm.view.activities.ContactUsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            style="@style/IconStyle"
+            android:layout_gravity="left"
+            android:padding="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/BiggestTextStyle"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/contactus_txt" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/emailTV"
+        style="@style/BigTextStyle"
+        android:text="dfdfdfdfdfdf"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/phoneNoTV"
+        style="@style/BigTextStyle"
+        android:text="ddfdfddfdfd"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/addressTV"
+        style="@style/BigTextStyle"
+        android:text="csdsdsdsdsd"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:maxLines="10"
+        android:singleLine="false" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <!-- binding object of ViewModel to the XML layout -->
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.PersonaliseViewModel" />
+    </data>
+
+    <!-- Provided Linear layout for the activity components -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutBars"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/bg_transparent_color"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/indicator_one"
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent" />
+
+                <View
+                    android:id="@+id/indicator_two"
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:id="@+id/indicator_three"
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:id="@+id/indicator_four"
+                    android:layout_width="0dp"
+                    android:layout_height="7dp"
+                    android:layout_weight="0.1"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>

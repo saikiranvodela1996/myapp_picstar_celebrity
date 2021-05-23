@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.devrabbit.picstarcelebrity.mvvm.viewmodel.StockImagesViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_screen_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <ImageView
+                style="@style/IconStyle"
+                android:layout_gravity="left"
+                android:onClick="@{()-> viewModel.onClickBack()}"
+                android:padding="15dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/BiggestTextStyle"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/stockimages_txt" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stockimagesRV"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never" />
+        <TextView
+            android:id="@+id/nostock_images_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@={viewModel.message}"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        <ProgressBar
+            android:id="@+id/loadmorePB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:background="@color/upload_images_btn_color"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="@{()-> viewModel.openGallery()}"
+            android:text="@string/upload_stock_images" />
+
+    </LinearLayout>
+</layout>

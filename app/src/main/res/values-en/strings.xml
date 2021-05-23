@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">PicStar Celebrity</string>
+    <string name="get_started">Get Started</string>
+    <string name="publiciity_made_easy">Publicity made easy</string>
+    <string name="welcome">Welcome</string>
+    <string name="back">Back</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+
+
+    <string name="com_auth0_client_id">K4aQGIftoSvf1OZVasx9emMjkFF5DCwa</string>
+    <string name="com_auth0_domain">dev-fwhugmus.us.auth0.com</string>
+    <string name="ok">OK</string>
+    <string name="hello_txt">Hello</string>
+
+    <string name="noInternet_txt">You are not connected to the Internet.</string>
+    <string name="personalise_feature_txt">Personalise your \n features</string>
+
+    <string name="liveselfie_txt">Live Selfie</string>
+    <string name="photoSelfie_txt">Photo Selfie</string>
+    <string name="videomsg_txt">Video Message</string>
+    <string name="live_video_txt">Live Video</string>
+    <string name="start_live_video_txt">Live video</string>
+    <string name="price_txt">Price: $ </string>
+
+    <string name="choosethis_feature_txt"> Choose this feature</string>
+    <string name="start_txt">  Start </string>
+    <string name="somethingwnt_wrong_txt">Something went wrong</string>
+
+    <string name="enter_servicecost_msg">Please enter service price</string>
+    <string name="profile_txt">Profile</string>
+
+    <string name="update_profile_txt">Update Profile</string>
+    <string name="create_event">Create Event</string>
+    <string name="forgotpwd_txt">Forgot password?</string>
+
+    <string name="enter_valid_price">Please enter valid price </string>
+
+    <string name="enteremail_pwd_msgalert">Please enter email address and password</string>
+    <string name="phone_call_permiision_alert">Phone call access is required to make full use of this app </string>
+    <string name="privacypolicy_txt">Terms &amp; Privacy Policy </string>
+    <string name="privacy_policy">Privacy policy </string>
+    <string name="contactus_txt">Contact us</string>
+    <string name="enter_email_txt">  Please enter email address </string>
+    <string name="block_txt">Block</string>
+    <string name="blocked_txt">Blocked</string>
+    <string name="block_thisuser_txt">Block this user</string>
+    <string name="comments_txt">Comments</string>
+    <string name="enter_urcomments_alertmsg">Please enter your comments on this user</string>
+
+    <string name="photos_nd_videos_txt">  Photos &amp; Videos</string>
+
+    <string name="photos_txt"> Photos</string>
+    <string name="videos_txt"> Videos</string>
+
+    <string name="enter_username_txt">Please enter your name</string>
+
+
+    <string name="select_gender_txt">Please select gender</string>
+
+    <string name="galleryandcamera_runtimepermission_alert_txt">Gallery, Camera and Record audio access is required to make full use of this app </string>
+
+    <string name="gallery_txt">Gallery</string>
+    <string name="camera_txt">Camera</string>
+    <string name="record_video_txt">Record video</string>
+
+
+    <string name="chooseoption_txt">Choose an option</string>
+    <string name="cam_Permision_deny_txt">Camera access is required to make full use of this app </string>
+
+    <string name="male_txt">  Male</string>
+
+    <string name="female_txt">Female</string>
+    <string name="other_txt">Other</string>
+
+    <string name="gender_txt">Gender</string>
+    <string name="planes_txt">PLANS</string>
+
+    <string name="update_yourprice_txt">UPDATE YOUR PRICE</string>
+
+    <string name="enter_email_alert">Please enter email address</string>
+
+    <string name="enter_validemail_msg">Please enter valid email address.</string>
+
+
+    <string name="email_address">Email Address</string>
+    <string name="submit">Submit</string>
+
+    <string name="dashboard_txt">Dashboard</string>
+
+    <string name="events_txt">Events</string>
+    <string name="save_settings_txt">Save Settings</string>
+    <string name="uploadvideo_txt">Upload video</string>
+
+
+
+
+    <string name="venue_txt">Venue</string>
+
+
+    <string name="date_txt">Date</string>
+
+    <string name="description_txt">Description</string>
+
+
+
+
+    <string name="event_name_txt">Event Name</string>
+    <string name="enter_eventname_txt">Please enter event name</string>
+    <string name="enter_venue">Please enter venue</string>
+    <string name="enter_eventdate_txt">Please enter event date</string>
+    <string name="enter_descritption">Please enter description</string>
+    <string name="enter_pwd_alert_txt">Please enter password</string>
+    <string name="select_atleast_oneservice">Please select atleast one service</string>
+
+    <string name="enter_photoselfie_price">Please enter price of Photo selfie</string>
+
+    <string name="enter_liveselfie_price">Please enter price of Live selfie</string>
+    <string name="enter_videomsg_price">Please enter price of Video message</string>
+
+    <string name="enter_livevideo_price">Please enter price of Live video</string>
+
+    <string name="price_should_be_greaterthan_zero">Price should be greater than zero</string>
+
+    <string name="cant_upload_selectedVideo">Can"'"t able to upload.Selected video size is so large</string>
+
+
+    <string name="stockimages_txt">Stock Images</string>
+
+    <string name="upcoming">Upcoming</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="album_txt">Album</string>
+    <string name="language_txt">Language</string>
+    <string name="stock_images">Stock Images</string>
+    <string name="history_txt">History</string>
+    <string name="settings_txt">Settings</string>
+    <string name="select_language_txt">Select a Language</string>
+    <string name="retake_txt">Retake</string>
+    <string name="continue_txt">Continue</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="upload_stock_images">Upload Stock Images</string>
+    <string name="storage_permission_not_granted">Please give the storage permission.</string>
+    <string name="gallery_runtimepermission_alert_txt">Gallery access is required to make full use of this app </string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
